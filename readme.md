@@ -1,7 +1,9 @@
+![image](https://github.com/suke0930/hoi4_relative_converter/blob/main/iamge.png?raw=true)
 # 概要
 Hoi4の絶対座標で表記されたNFファイルを相対座標に変換するツールです
 
 # 使い方
+
 focusブロックのみ書かれたfocusのtxtをexeにドラッグアンドドロップすれば動きます 
 ### 例
 <details>
