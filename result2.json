@@ -1,0 +1,5361 @@
+[
+	{
+		"value": [
+			[
+				"id",
+				" PRC_focus"
+			],
+			[
+				"default",
+				" no"
+			]
+		],
+		"obj": [
+			{
+				"value": [
+					[
+						"base",
+						0
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"add",
+								10
+							],
+							[
+								"tag",
+								" PRC"
+							]
+						],
+						"obj": [],
+						"name": "modifier",
+						"comment": []
+					}
+				],
+				"name": "country",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"x",
+						50
+					],
+					[
+						"y",
+						2200
+					]
+				],
+				"obj": [],
+				"name": "continuous_focus_position",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-1"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						4
+					],
+					[
+						"y",
+						6
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-2"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						12
+					],
+					[
+						"y",
+						6
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-3"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						4
+					],
+					[
+						"y",
+						7
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-1"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-4"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"relative_position_id",
+						" PRC-1"
+					],
+					[
+						"x",
+						-2
+					],
+					[
+						"y",
+						1
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-1"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-5"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						2
+					],
+					[
+						"y",
+						8
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-3"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-6"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						2
+					],
+					[
+						"y",
+						9
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-5"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-7"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						2
+					],
+					[
+						"y",
+						10
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-6"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-8"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						0
+					],
+					[
+						"y",
+						9
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-5"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-9"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						0
+					],
+					[
+						"y",
+						10
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-8"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-10"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						4
+					],
+					[
+						"y",
+						11
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-7"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-9"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-14"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-11"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						4
+					],
+					[
+						"y",
+						12
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-7"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-10"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-12"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						4
+					],
+					[
+						"y",
+						8
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-3"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-13"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						4
+					],
+					[
+						"y",
+						9
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-12"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-14"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						4
+					],
+					[
+						"y",
+						10
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-13"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-15"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						7
+					],
+					[
+						"y",
+						8
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-3"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-16"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						7
+					],
+					[
+						"y",
+						9
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-15"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-17"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						6
+					],
+					[
+						"y",
+						10
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-16"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-18"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						8
+					],
+					[
+						"y",
+						10
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-16"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-19"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						7
+					],
+					[
+						"y",
+						11
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-17"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-18"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-20"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						12
+					],
+					[
+						"y",
+						7
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-2"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-21"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						11
+					],
+					[
+						"y",
+						8
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-20"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-22"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						13
+					],
+					[
+						"y",
+						8
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-21"
+							]
+						],
+						"obj": [],
+						"name": "mutually_exclusive",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-20"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-23"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						10.5
+					],
+					[
+						"y",
+						9
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-21"
+							],
+							[
+								"focus",
+								" PRC-22"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-24"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						12
+					],
+					[
+						"y",
+						9
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-21"
+							],
+							[
+								"focus",
+								" PRC-22"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-25"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						14
+					],
+					[
+						"y",
+						9
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-21"
+							],
+							[
+								"focus",
+								" PRC-22"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-26"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						14
+					],
+					[
+						"y",
+						10
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-25"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-27"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						16
+					],
+					[
+						"y",
+						9
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-21"
+							],
+							[
+								"focus",
+								" PRC-22"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-28"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						12
+					],
+					[
+						"y",
+						10
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-24"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-29"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						10.5
+					],
+					[
+						"y",
+						10
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-23"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-30"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						12
+					],
+					[
+						"y",
+						11
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-28"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-31"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						10
+					],
+					[
+						"y",
+						11
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-28"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-32"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						11
+					],
+					[
+						"y",
+						12
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-30"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-33"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						13
+					],
+					[
+						"y",
+						12
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-30"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-34"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						9
+					],
+					[
+						"y",
+						13
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-32"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-33"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-35"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						11.5
+					],
+					[
+						"y",
+						13
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-32"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-33"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-36"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						13
+					],
+					[
+						"y",
+						13
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-32"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-33"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-37"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						15
+					],
+					[
+						"y",
+						13
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-32"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-33"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-38"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						11.5
+					],
+					[
+						"y",
+						14
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-35"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-39"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						28
+					],
+					[
+						"y",
+						3
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-40"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						27
+					],
+					[
+						"y",
+						4
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-39"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-41"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						29
+					],
+					[
+						"y",
+						4
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-39"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-42"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						22
+					],
+					[
+						"y",
+						4
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-39"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-43"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						18
+					],
+					[
+						"y",
+						4
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-39"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-44"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						38
+					],
+					[
+						"y",
+						4
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-39"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-45"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						36
+					],
+					[
+						"y",
+						4
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-39"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-46"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						27
+					],
+					[
+						"y",
+						5
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-40"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-47"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						27
+					],
+					[
+						"y",
+						7
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-46"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-48"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						27
+					],
+					[
+						"y",
+						9
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-47"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-65"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-49"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						25.6
+					],
+					[
+						"y",
+						5
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-40"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-50"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						23
+					],
+					[
+						"y",
+						5
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-42"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-51"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						21
+					],
+					[
+						"y",
+						5
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-42"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-52"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						19
+					],
+					[
+						"y",
+						5
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-43"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-53"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						17
+					],
+					[
+						"y",
+						5
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-43"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-54"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						16
+					],
+					[
+						"y",
+						6
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-53"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-52"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-55"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						16
+					],
+					[
+						"y",
+						7
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-54"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-56"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						20
+					],
+					[
+						"y",
+						6
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-52"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-51"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-57"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						18
+					],
+					[
+						"y",
+						6.5
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-52"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-53"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-58"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						18
+					],
+					[
+						"y",
+						8.5
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-57"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-59"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						20
+					],
+					[
+						"y",
+						7.5
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-56"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-60"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						20
+					],
+					[
+						"y",
+						9.5
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-59"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-61"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						22
+					],
+					[
+						"y",
+						6.5
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-51"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-50"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-62"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						22
+					],
+					[
+						"y",
+						8.5
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-61"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-63"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						23.8
+					],
+					[
+						"y",
+						7
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-50"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-64"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						25.3
+					],
+					[
+						"y",
+						6
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-49"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-65"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						25.3
+					],
+					[
+						"y",
+						7
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-64"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-66"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						28
+					],
+					[
+						"y",
+						6
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-46"
+							],
+							[
+								"focus",
+								" PRC-67"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-67"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						29
+					],
+					[
+						"y",
+						5
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-41"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-68"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						29
+					],
+					[
+						"y",
+						9
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-67"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-83"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-69"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						31.5
+					],
+					[
+						"y",
+						5
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-41"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-70"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						31.5
+					],
+					[
+						"y",
+						6
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-69"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-71"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						32
+					],
+					[
+						"y",
+						7
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-70"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-72"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						30
+					],
+					[
+						"y",
+						7
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-70"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-67"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-73"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						37
+					],
+					[
+						"y",
+						5
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-44"
+							],
+							[
+								"focus",
+								" PRC-45"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-74"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						37
+					],
+					[
+						"y",
+						6
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-73"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-75"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						37
+					],
+					[
+						"y",
+						8
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-74"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-76"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						38
+					],
+					[
+						"y",
+						7
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-44"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-77"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						36
+					],
+					[
+						"y",
+						7
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-45"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-78"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						36
+					],
+					[
+						"y",
+						9
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-77"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-79"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						38
+					],
+					[
+						"y",
+						9
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-76"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-80"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						37
+					],
+					[
+						"y",
+						10
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-79"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-81"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						37
+					],
+					[
+						"y",
+						11
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-80"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-82"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						34.2
+					],
+					[
+						"y",
+						7
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-41"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-83"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						32.5
+					],
+					[
+						"y",
+						8
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-82"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-70"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-84"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						34.5
+					],
+					[
+						"y",
+						8
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-82"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-85"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						34.3
+					],
+					[
+						"y",
+						9
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-84"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-86"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						32.5
+					],
+					[
+						"y",
+						9
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-83"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-87"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						30
+					],
+					[
+						"y",
+						8
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-72"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-88"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						29
+					],
+					[
+						"y",
+						10
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-68"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			},
+			{
+				"value": [
+					[
+						"id",
+						" PRC-89"
+					],
+					[
+						"icon",
+						" \"GFX_focus_generic_china1\""
+					],
+					[
+						"x",
+						29
+					],
+					[
+						"y",
+						11
+					],
+					[
+						"cost",
+						10
+					]
+				],
+				"obj": [
+					{
+						"value": [
+							[
+								"focus",
+								" PRC-88"
+							]
+						],
+						"obj": [],
+						"name": "prerequisite",
+						"comment": []
+					},
+					{
+						"value": [
+							[
+								"factor",
+								100
+							]
+						],
+						"obj": [],
+						"name": "ai_will_do",
+						"comment": []
+					},
+					{
+						"value": [],
+						"obj": [],
+						"name": "completion_reward",
+						"comment": []
+					}
+				],
+				"name": "focus",
+				"comment": []
+			}
+		],
+		"name": "focus",
+		"comment": []
+	},
+	{
+		"value": [
+			[
+				"id",
+				" PRC-1"
+			],
+			[
+				"icon",
+				" \"GFX_focus_generic_china1\""
+			],
+			[
+				"x",
+				4
+			],
+			[
+				"y",
+				6
+			],
+			[
+				"cost",
+				10
+			]
+		],
+		"obj": [
+			{
+				"value": [
+					[
+						"factor",
+						100
+					]
+				],
+				"obj": [],
+				"name": "ai_will_do",
+				"comment": []
+			},
+			{
+				"value": [],
+				"obj": [],
+				"name": "completion_reward",
+				"comment": []
+			}
+		],
+		"name": "focus",
+		"comment": []
+	},
+	{
+		"value": [
+			[
+				"id",
+				" PRC-2"
+			],
+			[
+				"icon",
+				" \"GFX_focus_generic_china1\""
+			],
+			[
+				"x",
+				12
+			],
+			[
+				"y",
+				6
+			],
+			[
+				"cost",
+				10
+			]
+		],
+		"obj": [
+			{
+				"value": [
+					[
+						"factor",
+						100
+					]
+				],
+				"obj": [],
+				"name": "ai_will_do",
+				"comment": []
+			},
+			{
+				"value": [],
+				"obj": [],
+				"name": "completion_reward",
+				"comment": []
+			}
+		],
+		"name": "focus",
+		"comment": []
+	},
+	{
+		"value": [
+			[
+				"id",
+				" PRC-39"
+			],
+			[
+				"icon",
+				" \"GFX_focus_generic_china1\""
+			],
+			[
+				"x",
+				28
+			],
+			[
+				"y",
+				3
+			],
+			[
+				"cost",
+				10
+			]
+		],
+		"obj": [
+			{
+				"value": [
+					[
+						"factor",
+						100
+					]
+				],
+				"obj": [],
+				"name": "ai_will_do",
+				"comment": []
+			},
+			{
+				"value": [],
+				"obj": [],
+				"name": "completion_reward",
+				"comment": []
+			}
+		],
+		"name": "focus",
+		"comment": []
+	}
+]

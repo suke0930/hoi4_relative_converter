@@ -23,6 +23,11 @@ if (!process.argv[2]) {
         name: string,
         comment?: string[]
     }
+
+    /**
+     * IDのマッピング用
+     */
+    type idmap = { id: string, x: number, y: number }
     /**
     * 雑多なツール郡。
     * 多すぎて邪魔だからクラス化した。
@@ -76,8 +81,8 @@ if (!process.argv[2]) {
      * 
      * @param str 
      */
-    function converter(str: string) {
 
+    function converter(str: string) {
         /**
          * ブロック内部に存在している要素を検出し、いい感じにオブジェクトとして返す
          * @param str 検索元文字列
@@ -142,19 +147,22 @@ if (!process.argv[2]) {
         let resultbuffer: newvaluetype[] = [];
         for (let index = 0; index < target.length; index++) {
             const element = target[index];
-            if (element.indexOf("focus = {") === -1 && element.indexOf("#") === -1) {//focusではない場合
+            if (element.indexOf("= {") === -1 && element.indexOf("#") === -1) {//focusではない場合
                 //focusブロック以外の場合の値出力とコメントを書く   
             } else {//focusブロックを発見した場合
-                const buffer = findblock(target, index + 1, "focus");//ブロック開始の行
-                // console.log(buffer);
-                // process.exit()
-                if (!buffer) {
-                    console.log("???")
-                    tools.shitlikeerror()
-                } else {
-                    resultbuffer.push(buffer[0]);//一旦コメントは無視
-                    index = buffer[1];
+                if (element.indexOf("#") === -1) {
+                    const buffer = findblock(target, index + 1, "focus");//ブロック開始の行
+                    // console.log(buffer);
+                    // process.exit()
+                    if (!buffer) {
+                        console.log("???")
+                        tools.shitlikeerror()
+                    } else {
+                        resultbuffer.push(buffer[0]);//一旦コメントは無視
+                        index = buffer[1];
+                    }
                 }
+
             }
         }//閉じfor
         return resultbuffer;
@@ -168,7 +176,7 @@ if (!process.argv[2]) {
      * @param parent 検証したい親要素
      * @param base 検索元のデーターベース
      */
-    function miningchildrenandedit(parent: newvaluetype[], base: newvaluetype[]): newvaluetype[] {
+    function miningchildrenandedit(parent: newvaluetype[], base: newvaluetype[], iddata: idmap[]): newvaluetype[] {
 
         type relative = {
             x: number,
@@ -190,7 +198,24 @@ if (!process.argv[2]) {
             const resultx = cobj.x - pobj.x;
             const resulty = cobj.y - pobj.y;
             return { x: resultx, y: resulty };
-
+        }
+        /**
+         * IDのDBに座標照会をする
+         * @param targetid 
+         * @param iddata 
+         * @returns nullは存在しないとき
+         */
+        function getcordbyid(targetid: string, iddata: idmap[]): idmap | null {
+            let returnbuff: idmap | null = null;
+            let flag = false;
+            //  console.log(targetid);
+            iddata.map(elem => {
+                //      console.log(elem.id)
+                if (elem.id.replace(" ", "") === targetid.replace(" ", "")) {
+                    returnbuff = elem
+                }
+            })
+            return returnbuff;
         }
         function getcoordinate(obj: newvaluetype): [number, number] {
 
@@ -237,10 +262,25 @@ if (!process.argv[2]) {
             })
             return result;
         }
+
+        function getid(base: newvaluetype): string {
+            let result = "";
+
+            base.value.map(elem => {
+                //      console.log(elem)
+                if (elem[0] === "id") {
+
+                    result = elem[1].toString();
+                }
+            })
+
+            return result;
+        }
         /**
          * xとyを指定されたobjから取り出す
          * @param obj 
          */
+
 
         /**
          * 
@@ -248,16 +288,20 @@ if (!process.argv[2]) {
          * @param parentid 親ID
          * @param obj 現時点のデータ
          */
-        function searchchildandedit(parentcoordinate: { x: number, y: number }, parentid: string, obj: newvaluetype[], callbackcounter?: number): newvaluetype[] {
+        function searchchildandedit(parentcoordinate: { x: number, y: number }, parentid: string, obj: newvaluetype[], iddata: idmap[], callbackcounter?: number): newvaluetype[] {
+            console.log("呼び出し");
+            console.log(obj);
             if (callbackcounter && callbackcounter > 100) {
                 console.log("callstuckが溢れてやがる！");
                 console.log(parentid);
                 process.exit();
             }
+            console.log(parentcoordinate)
             // let resultbuffervalue = obj.value;
             // let resultbuffer = obj.obj;
             let nexyparents: { parentcoordinate: { x: number, y: number }, parentid: string }[] = [];
             let objbuffer = obj.map((elemtop) => {
+
                 let result: newvaluetype = elemtop;
                 /**
                  * 子要素の座標
@@ -288,19 +332,10 @@ if (!process.argv[2]) {
                                 const position = [findindex(result, "x")[0], findindex(result, "y")[0]];
                                 const basecoordinatex: number = Number(result.value[Number(position[0])][1]);
                                 const basecoordinatey: number = Number(result.value[Number(position[1])][1]);
-                                // if (getvalue(elemtop, "default_cord").length === 0) {
-                                //     //console.log("usedefault")
-                                //     return getcoordinate(elemtop)
-                                // } else {
-                                //     //  console.log("used**efault")
-                                //     const value = getvalue(elemtop, "default_cord")[0][1].toString().split(":");
-                                //     console.log(value);
-                                //     return [Number(value[0]), Number(value[1])];
-
-                                // }
-                                //次の検索する配列リストに追加する
-
-                                nexyparents.push({ parentcoordinate: { x: backupcord[0], y: backupcord[1] }, parentid: getvalue(elemtop, "id")[0][1].toString() });
+                                const pcord = getcordbyid(getid(elemtop), iddata);
+                                if (pcord) {
+                                    nexyparents.push({ parentcoordinate: { x: pcord.x, y: pcord.y }, parentid: getvalue(elemtop, "id")[0][1].toString() });
+                                }
                             }
 
                         })
@@ -315,7 +350,8 @@ if (!process.argv[2]) {
                     if (callbackcounter) {
                         callbackcounterbuffer = callbackcounter;
                     }
-                    const resultnextedit = searchchildandedit(elem.parentcoordinate, elem.parentid, objbuffer, callbackcounterbuffer + 1);
+
+                    const resultnextedit = searchchildandedit(elem.parentcoordinate, elem.parentid, objbuffer, iddata, callbackcounterbuffer + 1);
                     objbuffer = resultnextedit;
                 })
             }
@@ -323,18 +359,36 @@ if (!process.argv[2]) {
         }
 
         //ここからは別モン！！！
+        function checkchildren(target: newvaluetype, base: newvaluetype[]) {
+            let resultbuffer: newvaluetype[] = base;
+
+            //  console.log(getid(base))
+            const id = getid(target)
+            if (id !== "") {
+                const pcord = getcordbyid(id, iddata);
+                console.log("")
+                if (pcord) {
+                    const pelemcoordinate = { x: pcord.x, y: pcord.y };
+                    //  console.log(getvalue(pelem, "id")[0][1].toString())
+                    resultbuffer = searchchildandedit(pelemcoordinate, getvalue(target, "id")[0][1].toString(), resultbuffer, iddata);
+                    console.log(resultbuffer)
+                }
+            }
+            if (base.obj.length !== 0) {
+                base.obj.map(elem => {
+                    resultbuffer = checkchildren(elem)
+                    //   console.log(resultbuffer)
+                })
+            }
+            return resultbuffer
+        }
         let resultbuffer: newvaluetype[] = JSON.parse(JSON.stringify(base).toString());//深層コピー
         parent.map((pelem) => {
-            const pelemcoordinate = { x: Number(getvalue(pelem, "x")[0][1]), y: Number(getvalue(pelem, "y")[0][1]) };
-            //  console.log(getvalue(pelem, "id")[0][1].toString())
-            resultbuffer = searchchildandedit(pelemcoordinate, getvalue(pelem, "id")[0][1].toString(), resultbuffer);
+
+            resultbuffer = checkchildren(pelem);
         })
         return resultbuffer;
     }
-
-
-
-
     /**
      * 編集したNFを書き戻す
      * @param base 
@@ -388,36 +442,117 @@ if (!process.argv[2]) {
         })
         return resultbuff;
     }
-
-
+    /**
+     * 既存のデーターベースからIDのマッピングを行う
+     * @param base データベース
+     */
+    function idmapping(base: newvaluetype[]): idmap[] {
+        function idmappinginternal(base: newvaluetype): idmap[] {
+            let result: idmap[] = [];
+            let mapbuffer: idmap = { id: "", x: 0, y: 0 }
+            base.value.map((elem2) => {
+                switch (elem2[0]) {
+                    case "id":
+                        mapbuffer.id = elem2[1].toString();
+                        break;
+                    case "x":
+                        mapbuffer.x = Number(elem2[1])
+                        break;
+                    case "y":
+                        mapbuffer.y = Number(elem2[1])
+                        break;
+                    default:
+                        break;
+                }
+            })
+            if (mapbuffer.id !== "") {
+                result.push(mapbuffer);
+            }
+            const childresult = ((
+                () => {
+                    if (base.obj.length !== 0) {
+                        let resultbuffer: idmap[] = [];
+                        base.obj.map(elem => {
+                            idmappinginternal(elem).map((elem) => {
+                                resultbuffer.push(elem);
+                            })
+                        })
+                        return resultbuffer;
+                    } else return []
+                }
+            ))();
+            if (childresult.length !== 0) childresult.map(elem => result.push(elem));
+            return result;
+        }
+        let result: idmap[] = [];
+        base.map((elem3) => {
+            const valuefromid = idmappinginternal(elem3);
+            if (valuefromid.length !== 0) valuefromid.map(elem => result.push(elem));
+        })
+        //     console.log(result);
+        return result.filter(elem => elem.id !== "")
+    }
 
     function main() {
         // relative_position_id が相対
+
         const result = converter(inputCode);//コンバート後のFocusたち
-        //    fs.writeFileSync("./result.json", JSON.stringify(result, null, '\t'))
+        const iddata = idmapping(result);
+        fs.writeFileSync("./id.json", JSON.stringify(iddata, null, '\t'))
         /**
          * 親要素
          */
-        const parenttree = result.filter((elem) => {
-            let flag = false;
-            elem.obj.map((elem) => {
-                if (elem.name === "prerequisite") {
-                    flag = true;
+        function getparent(base: newvaluetype[]) {
+            function getparentinternal(elem2: newvaluetype): newvaluetype[] {
+                let result: string[] = [];
+                let flag = [false, false]
+                elem2.value.map((elem) => {
+                    if (elem[0].toString() === "id") {
+                        flag[1] = true;
+                    }
+                })
+                elem2.obj.map((elem) => {
+                    if (elem.name.toString() === "prerequisite") {
+                        //    console.log(elem)
+                        flag[0] = true;
+                    }
+                })
+                if (flag[0] !== true && flag[1] === true) {
+                    //        console.log(elem2)
+                    result.push(elem[0]);
                 }
+                if (elem2.obj.length !== 0) {
+                    elem2.obj.map(elem => {
+                        getparentinternal(elem).map(elem => result.push(elem))
+                    })
+                }
+                return result
+            }
+            let result: newvaluetype[] = [];
+            base.map(elem => {
+                getparentinternal(elem).map(elem => {
+                    result.push(elem);
+                })
             })
-            if (flag === false) {
-                return elem;
-            };
 
-        })
-        ////   console.log(parenttree);
-        const miningresult = miningchildrenandedit(parenttree, result);//相対座標に修正
+            return result
+        }
+        const parenttree: newvaluetype[] = getparent(result);
+        fs.writeFileSync("./result2.json", JSON.stringify(parenttree, null, '\t'))
+        //   console.log(parenttree);
+
+
+        const miningresult = miningchildrenandedit(parenttree, result, iddata);//相対座標に修正
+        // console.log(miningresult);
         const rawnf = exportNF(miningresult).join('\n\n');
         fs.writeFileSync("./" + process.argv[2].split("\\")[process.argv[2].split("\\").length - 1].replace("\\", "").replace(".txt", "") + "_fix.txt", rawnf, "utf-8");
         console.log("正常に処理しました");
         setTimeout(() => {
             process.exit();
         }, 2000);
+
+
+
         //    fs.writeFileSync("./resultmining.json", JSON.stringify(miningresult, null, '\t'))
         // console.log(JSON.stringify(result, null, '\t'))
     }
